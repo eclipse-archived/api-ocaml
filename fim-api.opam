@@ -5,7 +5,7 @@ license: "ELP 2"
 authors:      "Gabriele Baldoni"
 homepage:     "https://fog05.io"
 bug-reports:  "https://github.com/eclipse-fog05/api-ocaml/issues/"
-dev-repo:     "https://github.com/eclipse-fog05/api-ocaml.git"
+dev-repo:     "git+https://github.com/eclipse-fog05/api-ocaml.git"
 
 version:"0.3.1"
 license: "Apache-2.0"
