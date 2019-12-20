@@ -1,0 +1,15 @@
+language: c
+sudo: required
+install:
+ - sudo apt update -qq
+ - sudo apt install libev-dev libssl-dev m4 pkg-config rsync unzip -y
+ - wget https://raw.githubusercontent.com/ocaml/ocaml-ci-scripts/master/.travis-opam.sh
+script: bash -ex .travis-opam.sh
+env:
+    global:
+    - PRE_INSTALL_HOOK="opam install atdgen ocp-ocamlres conf-libev -y"
+    # - EXTRA_DEPS="atdgen ocp-ocamlres conf-libev"
+    - PINS="fos-fim-api:./fimapi apero-core:https://github.com/atolab/apero-core.git#0.4.5 dynload-sys:https://github.com/atolab/apero-core.git#0.4.5 apero-net:https://github.com/atolab/apero-net.git#0.4.5 apero-time:https://github.com/atolab/apero-time.git#0.4.5 zenoh-proto:https://github.com/atolab/zenoh.git#0.3.0 zenoh-ocaml:https://github.com/atolab/zenoh.git#0.3.0 yaks-common:https://github.com/atolab/yaks-common.git#0.3.0 yaks-ocaml:https://github.com/atolab/yaks-ocaml.git#0.3.0 fos-sdk:https://github.com/eclipse-fog05/sdk-ocaml.git"
+    - PACKAGE=fos-fim-api
+    matrix:
+    - OCAML_VERSION=4.07
