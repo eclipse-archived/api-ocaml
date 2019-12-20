@@ -1,12 +1,12 @@
 all:
-	make -C fimapi
+	dune build
 
 clean:
-	make -C fimapi clean
+	dune clean
 
 
 install:
-	make -C fimapi install
+	opam pin fos-fim-api .
 
 uninstall:
-	make -C fimapi uninstall
+	opam remove fos-fim-api

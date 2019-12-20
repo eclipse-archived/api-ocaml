@@ -1,0 +1,29 @@
+opam-version: "2.0"
+version:"0.1"
+maintainer: "gabriele.baldoni@adlinktech.com"
+license: "ELP 2"
+authors:      "Gabriele Baldoni"
+homepage:     "https://fog05.io"
+bug-reports:  "https://github.com/eclipse-fog05/api-ocaml/issues/"
+dev-repo:     "git+https://github.com/eclipse-fog05/api-ocaml.git"
+
+version:"0.3.1"
+license: "Apache-2.0"
+
+build: [
+ ["dune" "-p" name "-j" jobs]
+]
+
+install: [
+  ["dune" "build" "-p" name "@install"]
+  ["dune" "install" name]
+]
+
+depends: [
+  "dune"
+  "fos-fim-api"
+]
+
+synopsis : "Eclipse fog05 API"
+description: """
+Eclipse fog05 OCaml Client API"""
