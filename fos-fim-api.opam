@@ -19,7 +19,7 @@ install: [
 depends: [
   "dune"  {= "1.11.4"}
   "fos-sdk" {= "0.1"}
-  "apero-core" {= "0.4.5"}
+  "apero-core" {= "0.4.6"}
 ]
 
 
