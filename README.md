@@ -4,7 +4,9 @@
 [![Build Status](https://travis-ci.com/eclipse-fog05/sdk-go.svg?branch=devel)](https://travis-ci.com/eclipse-fog05/api-ocaml)
 
 
-# Eclispe fog05 Client API OCaml
+# Eclipse fog05 Client API OCaml
+
+THIS REPOSITORY HAS BEEN ARCHIVED
 
 This repository contains the Eclipse fog05 Client API for OCaml
 
